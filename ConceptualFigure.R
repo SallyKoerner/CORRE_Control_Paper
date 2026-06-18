@@ -554,7 +554,7 @@ panel_b <- ggplot(scenarios_a, aes(x = ambient_change, y = gcd_change)) +
     "text",
     x = 3,
     y = 51,
-    label = "GCD-driven difference\n> background temporal change",
+    label = "GCD-driven difference\n> background year-to-year change",
     color = "#CB181D",
     size = 3.6,
     hjust = 0,
@@ -565,7 +565,7 @@ panel_b <- ggplot(scenarios_a, aes(x = ambient_change, y = gcd_change)) +
     "text",
     x = 52,
     y = 3,
-    label = "GCD-driven difference\n< background temporal change",
+    label = "GCD-driven difference\n< background year-to-year change",
     color = "#08519C",
     size = 3.6,
     hjust = 1,
@@ -592,7 +592,7 @@ panel_b <- ggplot(scenarios_a, aes(x = ambient_change, y = gcd_change)) +
   ) +
   
   labs(
-    x = "Background temporal change\n(S → A)",
+    x = "Background year-to-year change\n(S → A)",
     y = "GCD-driven difference\n(S → GCD)",
     title = "B."
   ) +
