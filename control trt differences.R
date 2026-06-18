@@ -874,7 +874,8 @@ Metrics<-RACs%>%
 
 #Export it now, and then reimport it that way you can skip all the precvious steps. It takes a long time to run.
 #write.csv(Metrics,"C2E/Products/Control Paper/Output/CvT_Metrics_RACsMult_4timepoints_Oct2020_D.csv" , row.names=F)
-write.csv(Metrics,"C2E/Products/Control Paper/Output/CvT_Metrics_RACsMult_4timepoints_Dec2025_nutonly_10yrless.csv" , row.names=F)
+#write.csv(Metrics,"C2E/Products/Control Paper/Output/CvT_Metrics_RACsMult_4timepoints_Dec2025_nutonly_10yrless.csv" , row.names=F)
+#####AHHHHHH CLuster f, accidentally reran this write code - which meant it probably saved over this for the nutrients which means its all going to change again. BUT I have the dataset saved as "to publish file already"
 #####################################################################################
 ##################START HERE NOW THAT THINGS ARE CALCULATED##########################
 ###################Control_Change vs Difference using 4 yrs only######################
@@ -1368,9 +1369,9 @@ treatments_average
 
 ###need to run timelag from other code "datasets_analyses_v2" in order to get panel 1
 library(grid)
-pushViewport(viewport(layout=grid.layout(3,1)))
+pushViewport(viewport(layout=grid.layout(1,3)))
 print(timelag2, vp=viewport(layout.pos.row = 1, layout.pos.col = 1))
-print(controls_average, vp=viewport(layout.pos.row = 2, layout.pos.col = 1))
-print(treatments_average, vp=viewport(layout.pos.row = 3, layout.pos.col = 1))
+print(controls_average, vp=viewport(layout.pos.row = 1, layout.pos.col = 2))
+print(treatments_average, vp=viewport(layout.pos.row = 1, layout.pos.col = 3))
 
 #export at 800x2000
